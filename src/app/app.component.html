@@ -1,0 +1,11 @@
+<a routerLink="/cats" (click)="handleChangePage(true)" [ngStyle]="{ backgroundColor: isCatSelected ? 'brown' : 'blue' }" >
+  <button>
+    Cats
+  </button>
+</a>
+<a routerLink="/dogs" (click)="handleChangePage(false)" [ngStyle]="{ backgroundColor: isCatSelected ? 'blue' : 'brown' }" >
+  <button>
+    Dogs
+  </button>
+</a>
+<router-outlet></router-outlet>
